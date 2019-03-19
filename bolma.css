@@ -1,0 +1,144 @@
+#size {
+  width: 400px;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 3px 4px rgba(30, 30, 30, 1);
+}
+
+#small {
+  width: 200px;
+}
+
+p, h3.subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  color: #A9A9A9;
+}
+
+p, dt, dd.subtitleSmall {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  color: rgba(90, 90, 90, 1);
+}
+
+li {
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 1rem;
+  font-size: 1em;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+div.subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  color: black;
+}
+
+div.marginpadding {
+  margin: 1em;
+  padding: 0.6em;
+}
+
+button {
+  margin-top: 1em;
+}
+
+#margin {
+  margin-top: 1em;
+}
+
+#margin2 {
+  margin-top: 3em;
+}
+
+.margintop {
+  margin: 1em;
+  text-align: left;
+}
+
+textarea+p {
+  margin-top: 1em;
+}
+
+h4+label {
+  margin-bottom: 1em;
+}
+
+input~h4 {
+  margin-top: 1em;
+}
+
+.fonts {
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: rgb(51, 51, 51)
+}
+
+p.centered {
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+/* alla images som innehåller titeln synth får klassegenskaperna */
+[title~=synth] {
+  border: 5px solid gray;
+}
+
+em {
+  color: blue;
+}
+
+/* Alla em element som finns inom dt kommer bli röda, utanför dt
+kommer dom bli blåa */
+dt em {
+  color: red;
+}
+
+/* em blir nu child, och .green går före och blir grön vilket
+inte varit fallet om detta inte kontrollerades i selectorn */
+.green>em {
+  color: green;
+}
+
+dt * {
+  text-transform: capitalize;
+}
+
+th, td, li {
+  text-align: left;
+  padding: 4px;
+}
+
+tr:hover {
+  background-color: #666666;
+}
+
+input:focus {
+  background-color: #61AFE8;
+}
+
+a:link {
+  color: #333;
+}
+
+a:visited {
+  color: #61AFE8;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: #ddd;
+}
+
+fieldset {
+  background: #fff url(keyboard.jpg) no-repeat bottom right fixed;
+}
